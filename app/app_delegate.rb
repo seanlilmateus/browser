@@ -1,11 +1,12 @@
 class AppDelegate
+  
   COMMENTS_ATTRIBUTES = {
     NSFontAttributeName => NSFont.fontWithName("Menlo", size:14),
     NSParagraphStyleAttributeName  => NSMutableParagraphStyle.new.tap { |para| para.alignment = 2 },
     NSForegroundColorAttributeName => NSColor.colorWithCalibratedRed(0.062, green:0.286, blue:0.039, alpha:1.0)
   }
+  
   def applicationDidFinishLaunching(notification)
-    # Sandbox.temporary_writes.apply!
     buildMenu
     buildWindow
     setupSubviews
@@ -32,9 +33,6 @@ class AppDelegate
   
   def console
     @_console ||= NSTextView.alloc.initWithFrame(NSRect.new([0,0], scrollView.contentSize)).tap do |tv|
-      # tv.translatesAutoresizingMaskIntoConstraints = false
-      # tv.backgroundColor = NSColor.colorWithDeviceWhite(0.373, alpha:1.0)
-      # tv.textColor = NSColor.whiteColor
       tv.font = NSFont.fontWithName("Menlo", size:14)
       tv.delegate = self
       tv.automaticQuoteSubstitutionEnabled  = false
@@ -84,7 +82,6 @@ class AppDelegate
     
     scrollView.documentView = self.console
     @mainWindow.makeFirstResponder self.console
-    # Sandbox.no_writes.apply!
   end
   
   def buildWindow
@@ -100,7 +97,6 @@ class AppDelegate
     self.console.string = ""
   end
   
-  ### NSTextViewDelegate
   def textView(textView, doCommandBySelector:commandSelector)
     if 'insertNewline:' == NSStringFromSelector(commandSelector)
       last_line = textView.textStorage.string.split(/\r?\n/).last
