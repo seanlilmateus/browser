@@ -1,0 +1,263 @@
+NSApp.delegate.list
+NSApp.delegate.list.sort { |a,b| a.klass.to_s <=> b.klass.to_s }
+puts NSApp.delegate.list.sort { |a,b| a.klass.to_s <=> b.klass.to_s }
+exit
+subviews
+subviews
+exit
+subviews
+exit
+NSBrowser.instance_methods
+exit
+exit
+exit
+exit
+exit
+NSBrowser.instance_methods
+NSBrowser.instance_methods
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exi
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exitexit
+exit
+NSIndexPath.instance_methods
+NSIndexPath.instance_methods
+NSIndexPath.instance_methods
+exit
+exit
+exit
+exit
+exit
+exit
+self.delegate
+self.delegate
+self.delegate
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exut
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+CBKlasses.all
+NSFetchRequest
+__NSGenericDeallocHandler
+NSClassFromString('__NSGenericDeallocHandler')
+NSClassFromString('__NSGenericDeallocHandler')
+exit
+exit
+exit
+puts CBKlasses.all
+puts CBKlasses.all.sort
+RBAnonymous3
+Queue
+OS_dispatch_data
+OS_dispatch_data
+PAImageSegmentRegion
+puts CBKlasses.all.sort[0..100]
+puts CBKlasses.all.sort[0..100]
+AOSSynchronizer.instance_methods
+puts CBKlasses.all.sort[0..100]
+puts CBKlasses.all.sort[100..200]
+CICheapBlur
+puts CBKlasses.all.sort[200..300]
+puts CBKlasses.all.sort[300..400]
+CIPromise
+CIPromise.instance_methods
+CIPromise.instance_methods(false, true)
+puts CBKlasses.all.sort[400..500]
+puts CBKlasses.all.sort[500..600]
+puts CBKlasses.all.sort[600..700]
+ENOSYS
+puts CBKlasses.all.sort[700..800]
+puts CBKlasses.all.sort[800..900]
+NSBasicObjectID
+MsgList
+puts CBKlasses.all.sort[900..1000]
+exit
+CBKlasses.all.reject { |c| c.to_s =~ /^[A-Z]+$/ || c.to_s[0..3] =~ /^[A-Z]+$/ || c.to_s[0] == '_'}
+CBKlasses.all.reject { |c| c.to_s =~ /^[A-Z]+$/ || c.to_s[0..3] =~ /^[A-Z]+$/ || c.to_s[0] == '_'}.select {|c| Module.const_get(c).is_a?(Class)}
+exit
+CBKlasses.klasses
+exit
+CBKlasses.klasses
+CBKlasses.klasses.count
+CBKlasses.klasses.first
+CBKlasses.klasses.map { |c| c.methods.count }
+CBKlasses.klasses.select { |c| c.respond_to?(:methods) }
+CBKlasses.all
+OS_xpc_service_instance
+exit
+exit
+CBKlasses.klasses
+exit
+CBKlasses.klasses
+CBKlasses.klasses.sort
+exit
+exit
+exit
+Array.constants(false)
+Array.constants(true)
+Array.constants
+Array.constants(false, true)
+Array.constants(false, false)
+Array.constants(true, false)
+Array.constants(false)
+exit
+label = NSLabelView.new
+label.stringValue = 'Hello World'
+label.translatesAutoresizingMaskIntoConstraints = false
+views_dict = { 'label' => label }
+constraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[label]|", options: 0, metrics: nil, views: views_dict)
+constraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[label]|", options: 0, metrics: nil, views: views_dict)
+exit
+exit
+exit
+exit
+subviews.last.description
+exit
+exit
+exit
+self.blackgroundColor = NSColor.blackColor
+self.backgroundColor = NSColor.blackColor
+self.text
+self.textColor
+self.textColor = NSColor.redColor
+exit
+exit
+AllocationTotal
+AllocationTotal.methods
+AllocationTotal.new.allocations
+AllocationTotal.new.allocations
+exit
+self.text
+self.textValue
+self.textStorage.string
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+23
+23
+exit
+exit
+exit
+exit
+exit
+exut
+exit
+exit
+self.textStorage.appendAttributedString "Hello"
+exit
+exit
+exit
+exit
+exit
+self.textStorage.attributes
+self.textStorage.methods
+exit
+exit
+exit

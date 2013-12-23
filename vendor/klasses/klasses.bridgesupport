@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name='CBKlasses'>
+<method class_method='true' selector='all'>
+<retval declared_type='NSArray*' type='@'/>
+</method>
+</class>
+</signatures>
