@@ -20,7 +20,7 @@ You'll need [Rubymotion][1] to build the this Project.
 - Solve conflict between **Object-C Object** and **Ruby Object**
 - Lazy load of other frameworks? something like MacRuby __framework__, unfortunatelly [Rubymotion][1] doesn't support it in static compilation 🐼.
 
-![image](https://github.com/seanlilmateus/browser/blob/master/screen_shot?raw=true "Screen Shot")
+![image](https://github.com/seanlilmateus/browser/blob/master/screen_shot.PNG?raw=true "Screen Shot")
 
 [1]: http://www.rubymotion.com
 [2]: http://wiki.scratch.mit.edu/wiki/Smalltalk#The_System_Browser
