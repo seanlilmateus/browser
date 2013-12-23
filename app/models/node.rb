@@ -20,7 +20,7 @@ class CBKlasses
     CBKlasses.all
              .reject { |c| c =~ /(^[A-Z]+$|^RBAnonymous)/ || c[0] == '_' || c.include?("Proxy") || c == 'Object' }
              .sort
-             .flat_map {|c| NSClassFromString(c) }
-             .select { |klass| klass.instancesRespondToSelector('inspect') }
+             .flat_map { |c| NSClassFromString(c) }
+             .select { |klass| klass.instancesRespondToSelector('methods') }
   end
 end

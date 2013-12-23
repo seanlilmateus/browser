@@ -1,10 +1,10 @@
 class AppDelegate
   
-  COMMENTS_ATTRIBUTES = {
-    NSFontAttributeName => NSFont.fontWithName("Menlo", size:14),
-    NSParagraphStyleAttributeName  => NSMutableParagraphStyle.new.tap { |para| para.alignment = 2 },
-    NSForegroundColorAttributeName => NSColor.colorWithCalibratedRed(0.062, green:0.286, blue:0.039, alpha:1.0)
-  }
+  COMMENTS_ATTRIBUTES = Hash[
+    NSFontAttributeName, NSFont.fontWithName("Menlo", size:14),
+    NSParagraphStyleAttributeName, NSMutableParagraphStyle.new.tap { |para| para.alignment = 2 },
+    NSForegroundColorAttributeName, NSColor.colorWithCalibratedRed(0.062, green:0.286, blue:0.039, alpha:1.0)
+  ]
   
   def applicationDidFinishLaunching(notification)
     buildMenu
